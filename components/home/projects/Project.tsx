@@ -4,7 +4,11 @@ import Link from "next/link";
 import { JSX, useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
+<<<<<<< HEAD
 import Image from "next/image";
+=======
+import Image from "next/image"; 
+>>>>>>> a80ae250b0baeeca958f05af631078ab2efd96c9
 import styles from "./projects.module.scss";
 
 interface Props {

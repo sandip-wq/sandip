@@ -55,8 +55,13 @@ export const ProjectModal = ({
           src={imgSrc}
           alt={`An image of the ${title} project.`}
           layout="intrinsic"
+<<<<<<< HEAD
           width={500}
           height={300}
+=======
+          width={500} 
+          height={300} 
+>>>>>>> a80ae250b0baeeca958f05af631078ab2efd96c9
         />
         <div className={styles.modalContent}>
           <h4>{title}</h4>
