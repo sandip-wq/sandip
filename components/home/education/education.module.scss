@@ -1,0 +1,58 @@
+.education {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.educationItem {
+  background: var(--background-light);
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* This will make all items the same height */
+  min-height: 150px; /* Minimum height for all items */
+  width: 100%;
+  min-width: 400px;
+}
+
+.title {
+  font-size: var(--text-md);
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.subtitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  background-color: var(--brand);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.subtitle {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.dates {
+  font-size: var(--text-sm);
+  color: var(--brand);
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .education {
+    grid-template-columns: 1fr;
+  }
+}
