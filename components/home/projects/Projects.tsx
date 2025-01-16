@@ -19,7 +19,7 @@ export const Projects = () => {
 const projects = [
   {
     title: "NextJS Portfolio",
-    imgSrc: "project-imgs/port6.png",
+    imgSrc: "/project-imgs/port6.png",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: ["NextJS", "React", "Typescript", "Scss", "Git", "Framer Motion"],
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     title: "Helm Sucht Kopf",
-    imgSrc: "project-imgs/helm.png",
+    imgSrc: "/project-imgs/helm.png",
     code: ".",
     projectLink: ".",
     tech: ["NextJS", "React", "Typescript", "TailwindCss", "GitLab", "CSS"],
@@ -103,7 +103,7 @@ modalContent: (
   },
   {
     title: "EduSphare",
-    imgSrc: "project-imgs/EduSphare.png",
+    imgSrc: "/project-imgs/EduSphare.png",
     code: "https://github.com/sandip-wq/Edusphare",
     projectLink: "https://sandip-wq.github.io/Edusphare/",
     tech: ["Javascript", "HTML", "CSS"],
@@ -149,7 +149,7 @@ modalContent: (
   },
   {
     title: "ProficientPulse",
-    imgSrc: "project-imgs/proficientPulse.png",
+    imgSrc: "/project-imgs/proficientPulse.png",
     code: "https://github.com/sandip-wq/ProficientPulse",
     projectLink: "https://sandip-wq.github.io/ProficientPulse/",
     tech: ["Javascript", "HTML", "CSS"],
@@ -194,7 +194,7 @@ modalContent: (
   },
   {
     title: "WordPress & Elementor",
-    imgSrc: "project-imgs/wordpress2.jpg",
+    imgSrc: "/project-imgs/wordpress2.jpg",
     code: "https://www.github.com",
     projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     tech: [

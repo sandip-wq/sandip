@@ -4,6 +4,7 @@ import Link from "next/link";
 import { JSX, useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
+import Image from "next/image"; // Import the Image component from next/image
 import styles from "./projects.module.scss";
 
 interface Props {
@@ -60,9 +61,11 @@ export const Project = ({
           onClick={() => setIsOpen(true)}
           className={styles.projectImage}
         >
-          <img
+          <Image
             src={imgSrc}
             alt={`An image of the ${title} project.`}
+            width={300}
+            height={300}
             style={{
               width: hovered ? "90%" : "85%",
               rotate: hovered ? "2deg" : "0deg",
