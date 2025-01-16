@@ -63,7 +63,7 @@ export const Project = ({
         >
           <Image
             src={imgSrc}
-            alt={`An image of the ${title} project.`}
+            alt={`An image of the ${title} project.`}  // Escape single quotes here
             width={300}
             height={300}
             style={{
