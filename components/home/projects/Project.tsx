@@ -4,7 +4,7 @@ import Link from "next/link";
 import { JSX, useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
-import Image from "next/image"; // Import the Image component from next/image
+import Image from "next/image";
 import styles from "./projects.module.scss";
 
 interface Props {
@@ -63,7 +63,7 @@ export const Project = ({
         >
           <Image
             src={imgSrc}
-            alt={`An image of the ${title} project.`}  // Escape single quotes here
+            alt={`An image of the ${title} project.`} 
             width={300}
             height={300}
             style={{
@@ -93,7 +93,7 @@ export const Project = ({
           <Reveal>
             <p className={styles.projectDescription}>
               {description}{" "}
-              <span onClick={() => setIsOpen(true)}>Learn more {">"}</span>
+              <span onClick={() => setIsOpen(true)}>Learn more {'>'}</span>  {/* Escaped single quote */}
             </p>
           </Reveal>
         </div>

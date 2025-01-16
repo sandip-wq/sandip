@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
-import Image from 'next/image'; // Import the Image component
+import Image from 'next/image';
 
 interface Props {
   isOpen: boolean;
@@ -55,8 +55,8 @@ export const ProjectModal = ({
           src={imgSrc}
           alt={`An image of the ${title} project.`}
           layout="intrinsic"
-          width={500} // Adjust width
-          height={300} // Adjust height
+          width={500}
+          height={300}
         />
         <div className={styles.modalContent}>
           <h4>{title}</h4>
