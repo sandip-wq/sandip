@@ -4,7 +4,7 @@ import Link from "next/link";
 import { JSX, useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
-import Image from "next/image"; // Import the Image component from next/image
+import Image from "next/image"; 
 import styles from "./projects.module.scss";
 
 interface Props {
