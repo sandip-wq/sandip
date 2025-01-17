@@ -20,8 +20,8 @@ const projects = [
   {
     title: "NextJS Portfolio",
     imgSrc: "/project-imgs/port6.png",
-    code: "https://www.github.com",
-    projectLink: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    code: "https://github.com/sandip-wq/sandip",
+    projectLink: "https://sandip-sarraf.vercel.app/",
     tech: ["NextJS", "React", "Typescript", "Scss", "Git", "Framer Motion"],
     description:
       "A sleek and interactive developer portfolio showcasing my skills and projects. Built with modern technologies like Next.js and Framer Motion.",
