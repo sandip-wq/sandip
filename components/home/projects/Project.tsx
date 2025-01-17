@@ -32,7 +32,7 @@ export const Project = ({
 
   const controls = useAnimation();
 
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
@@ -93,7 +93,7 @@ export const Project = ({
           <Reveal>
             <p className={styles.projectDescription}>
               {description}{" "}
-              <span onClick={() => setIsOpen(true)}>Learn more {'>'}</span>  {/* Escaped single quote */}
+              <span onClick={() => setIsOpen(true)}>Learn more &gt;</span>
             </p>
           </Reveal>
         </div>
