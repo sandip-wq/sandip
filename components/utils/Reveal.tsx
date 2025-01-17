@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { JSX, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 interface Props {
@@ -10,8 +10,8 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(ref as React.RefObject<HTMLDivElement>, { once: true });
 
   useEffect(() => {
     if (isInView) {
@@ -57,3 +57,4 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
     </div>
   );
 };
+
