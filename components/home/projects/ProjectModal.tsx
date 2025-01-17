@@ -47,7 +47,7 @@ export const ProjectModal = ({
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        onClick={(e) => e.stopPropagation()}
+        onPointerDown={(e) => e.stopPropagation()}
         className={styles.modalCard}
       >
         <Image
@@ -55,13 +55,8 @@ export const ProjectModal = ({
           src={imgSrc}
           alt={`An image of the ${title} project.`}
           layout="intrinsic"
-<<<<<<< HEAD
           width={500}
           height={300}
-=======
-          width={500} 
-          height={300} 
->>>>>>> a80ae250b0baeeca958f05af631078ab2efd96c9
         />
         <div className={styles.modalContent}>
           <h4>{title}</h4>
