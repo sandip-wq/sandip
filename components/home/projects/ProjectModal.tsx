@@ -1,7 +1,6 @@
 import styles from "./projectmodal.module.scss";
-import { JSX, useEffect } from "react";
+import { JSX, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
@@ -9,7 +8,7 @@ import Image from 'next/image';
 
 interface Props {
   isOpen: boolean;
-  setIsOpen: Function;
+  setIsOpen: (isOpen: boolean) => void;
   title: string;
   imgSrc: string;
   code: string;
@@ -28,31 +27,36 @@ export const ProjectModal = ({
   code,
   tech,
 }: Props) => {
+  const [isRendered, setIsRendered] = useState(false);
+
   useEffect(() => {
     const body = document.querySelector("body");
 
     if (isOpen) {
       body!.style.overflowY = "hidden";
+      setIsRendered(true);
     } else {
       body!.style.overflowY = "scroll";
+      setTimeout(() => setIsRendered(false), 300); // Match this with your CSS transition time
     }
   }, [isOpen]);
 
   const content = (
-    <div className={styles.modal} onClick={() => setIsOpen(false)}>
+    <div 
+      className={`${styles.modal} ${isOpen ? styles.open : ''}`} 
+      onClick={() => setIsOpen(false)}
+    >
       <button className={styles.closeModalBtn}>
         <MdClose />
       </button>
 
-      <motion.div
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        onPointerDown={(e) => e.stopPropagation()}
-        className={styles.modalCard}
+      <div
+        onClick={(e: React.MouseEvent) => e.stopPropagation()}
+        className={`${styles.modalCard} ${isOpen ? styles.open : ''}`}
       >
         <Image
           className={styles.modalImage}
-          src={imgSrc}
+          src={imgSrc || "/placeholder.svg"}
           alt={`An image of the ${title} project.`}
           layout="intrinsic"
           width={500}
@@ -78,12 +82,11 @@ export const ProjectModal = ({
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 
-  if (!isOpen) return <></>;
+  if (!isRendered) return null;
 
-  // @ts-ignore
-  return ReactDOM.createPortal(content, document.getElementById("root"));
+  return ReactDOM.createPortal(content, document.getElementById("root")!);
 };
