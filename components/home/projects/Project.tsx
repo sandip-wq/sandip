@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/utils/Reveal";
 import { useAnimation, useInView, motion } from "framer-motion";
 import Link from "next/link";
-import { JSX, useEffect, useRef, useState } from "react";
+import { JSX, useEffect, useRef, useState, RefObject } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
 import Image from "next/image"; 
@@ -32,7 +32,7 @@ export const Project = ({
 
   const controls = useAnimation();
 
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null) as RefObject<HTMLDivElement>;
   const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
