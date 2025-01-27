@@ -12,8 +12,8 @@ export const Stats = () => {
         <span>Use For Work</span>
       </h4>
       <div className={styles.statGrid}>
-      <span className="chip">Next.js</span>
-      <span className="chip">React</span>
+        <span className="chip">Next.js</span>
+        <span className="chip">React</span>
         <span className="chip">HTML</span>
         <span className="chip">CSS</span>
         <span className="chip">SCSS</span>
@@ -25,16 +25,16 @@ export const Stats = () => {
         <span className="chip">WooCommerce</span>
         <span className="chip">SEO Tools</span>
         <span className="chip">Figma</span>
+        <span className="chip">Framer</span>
         <span className="chip">VS Code</span>
         <span className="chip">IntelliJ IDEA</span>
         <span className="chip">PostgreSQL</span>
-        <span className="chip">Figma</span>
         <span className="chip">Notion</span>
       </div>
     </div>
   </Reveal>
-  <Reveal>
-    <div className={styles.statColumn}>
+      <Reveal>
+      <div className={styles.statColumn}>
       <h4>
         <AiFillSmile size="2.4rem" color="var(--brand)" />
         <span>Use for Fun</span>
