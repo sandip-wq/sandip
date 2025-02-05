@@ -55,7 +55,7 @@ const projects = [
     title: "Helm Sucht Kopf",
     imgSrc: "/project-imgs/helm.png",
     code: ".",
-    projectLink: ".",
+    projectLink: "https://karriere-berliner-feuerwehr.vercel.app/",
     tech: ["NextJS", "React", "Typescript", "TailwindCss", "GitLab", "CSS"],
     description: 
   "A collaborative project with university mates to develop a career page for Berlin's Firedepartment, featuring interactive elements like a video, quiz, chatbot, and job filters. Built using Next.js, React, TypeScript, TailwindCSS, and GitLab.",
