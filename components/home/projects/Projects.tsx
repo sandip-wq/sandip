@@ -17,6 +17,41 @@ export const Projects = () => {
 };
 
 const projects = [
+
+  {
+    title: "MonTra Expense Tracker",
+    imgSrc: "/project-imgs/MonTra.png",
+    code: "https://github.com/sandip-wq/montra-expense-tracker",
+    projectLink: "#",  // Disable link until deployment is ready
+    tech: ["Spring Boot", "Java", "Thymeleaf", "H2 Database", "JPA", "Bootstrap"],
+    description:
+      "A full-stack expense tracker built with Spring Boot, featuring CRUD operations, dynamic UI with Thymeleaf, and an in-memory H2 database.",
+    modalContent: (
+      <>
+        <p>
+          MonTra is a powerful and user-friendly expense tracker application that
+          enables users to record, manage, and track their expenses seamlessly.
+        </p>
+        <p>
+          The backend is built with <strong>Spring Boot</strong>, using JPA and H2 Database for fast data persistence.
+          Thymeleaf is used for dynamic HTML rendering, and Bootstrap ensures a responsive UI.
+        </p>
+        <p>
+          Key features include <strong>CRUD operations</strong> (Create, Read, Update, Delete),
+          real-time expense tracking, and total balance calculation.
+        </p>
+        <p>
+          This project helped me gain deep experience in backend development with Spring Boot,
+          database management with JPA, and UI integration with Thymeleaf.
+        </p>
+        <p>
+          <strong>🚀 Deployment in Progress!</strong> The live version will be available soon.
+          Stay tuned for updates.
+        </p>
+      </>
+    ),
+},
+
   {
     title: "NextJS Portfolio",
     imgSrc: "/project-imgs/port6.png",
