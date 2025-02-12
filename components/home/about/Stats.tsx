@@ -19,6 +19,7 @@ export const Stats = () => {
         <span className="chip">SCSS</span>
         <span className="chip">JavaScript</span>
         <span className="chip">Java</span>
+        <span className="chip">SpringBoot</span>
         <span className="chip">Git & GitHub</span>
         <span className="chip">WordPress</span>
         <span className="chip">Elementor</span>
