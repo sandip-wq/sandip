@@ -19,7 +19,7 @@ const experience = [
     location: "Berlin, Germany",
     description:
       "Collaborated on designing and developing responsive websites. Assisted with debugging, optimizing, and creating interactive features to improve performance.",
-    tech: ["HTML", "CSS", "JavaScript", "Git", "WordPress", "Elementor", "SEO-Plugins", "VS Code"],
+    tech: ["HTML", "CSS", "JavaScript", "WordPress", "Elementor", "SEO-Plugins", "VS Code"],
   },
   {
     title: "Edeka",
